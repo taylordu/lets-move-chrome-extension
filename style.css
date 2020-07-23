@@ -1,48 +1,48 @@
 body {
-    background-color: white;
-    width: 500px;
-    height: 200px;
-    border: solid  #7953b3 2px;
-    border-radius: 5px;
-  }
-  td {
-    font-size: 16px;
-  }
-  .alarmSet {
-    margin-top: 10px;
-    margin-bottom:10px;
-    text-align: left;
-  }
+  background-color: white;
+  width: 500px;
+  height: 220px;
+  border: solid #7953b3 2px;
+  border-radius: 5px;
+}
+td {
+  font-size: 16px;
+}
+.alarmSet {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: left;
+}
 
-  #logo {
-    width: 100px;
-    margin-right: 20px;
-  }
+#logo {
+  width: 100px;
+  margin-right: 20px;
+}
 
-  .btn-wrapper {
-      text-align: right;
-      padding-left: 90px;
-  }
-  .button {
-    border-radius: 5px;
-    color: white;
-    font-size: 16px;
-    font-weight: 600;
-    padding: 10px;
-    padding-bottom: 25px;
-    background-color: #7953b3;
-    border: solid white 1px;
-    font-family: sans-serif;
-    text-decoration: none;
-    cursor: pointer;
-    text-align: center;
-    height: 15px;
-    }
-        
+.btn-wrapper {
+  text-align: right;
+  padding-left: 90px;
+}
+.button {
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px;
+  padding-bottom: 25px;
+  background-color: #7953b3;
+  border: solid white 1px;
+  font-family: sans-serif;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+  height: 15px;
+}
+
 .button:hover {
-    background: white;
-    color: #7953b3;
-    border: solid  #7953b3 2px;
-    border-radius: 5px;
-    text-decoration: none; 
-    }
+  background: white;
+  color: #7953b3;
+  border: solid #7953b3 2px;
+  border-radius: 5px;
+  text-decoration: none;
+}

@@ -1,3 +1,3 @@
 # Hackathon
 
-CS hackathon - create a chrome extension that tells you to move based on user input. 
+CS Hackathon - Create a Chrome extension that sends a notification at set time intervals based on user input.
