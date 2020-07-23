@@ -1,23 +1,31 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Move Around</title>
-    <link rel="stylesheet" href="style.css"> 
-  </head>
-  <body>
-    <table>
-      <tr><td><img src="./logo.png" id="logo"/>
+
+<head>
+  <title>Move Around</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <table>
+    <tr>
+      <td><img src="./logo.png" id="logo" />
       </td>
-    <td><h3>Move Around!</h3>
-      How often do you want to be reminded to get up from your desk and move?</td>
+      <td>
+        <h3>Move Around!</h3>
+        How often do you want to be reminded to get up from your desk and move?
+        <div class="alarmSet"></div>
+      </td>
     </tr>
-    </table>
-    <span class="btn-wrapper">
+  </table>
+  <span class="btn-wrapper">
     <button class="button" id="15min" value="15">15 Minutes</button>
     <button class="button" id="30min" value="30">30 Minutes</button>
-    <button class="button" id="cancelAlarm">Cancel Alarm</button>
-    </span>
-    <script src="script.js"></script>
-    <script src="alarm.js"></script>
-  </body>
+    <button class="button" id="60min" value="60">60 Minutes</button>
+    <button class="button" id="cancelAlarm">Cancel</button>
+  </span>
+  <script src="script.js"></script>
+  <script src="alarm.js"></script>
+</body>
+
 </html>

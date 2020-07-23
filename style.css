@@ -1,19 +1,27 @@
 body {
     background-color: white;
     width: 500px;
-    height: 170px;
+    height: 200px;
     border: solid  #7953b3 2px;
     border-radius: 5px;
+  }
+  td {
+    font-size: 16px;
+  }
+  .alarmSet {
+    margin-top: 10px;
+    margin-bottom:10px;
+    text-align: left;
   }
 
   #logo {
     width: 100px;
-    margin: 0px;
+    margin-right: 20px;
   }
 
   .btn-wrapper {
       text-align: right;
-      padding-left: 150px;
+      padding-left: 90px;
   }
   .button {
     border-radius: 5px;

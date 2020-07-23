@@ -3,17 +3,16 @@
     "version": "1.0", //the version number we're on
     "description": "An app that tells you when to get off your butt and move!",
     "manifest_version": 2, //always set to 2. The version of manifest Chrome is on.  
-    "permissions": [    //permissions our extension requires to do things
+    "permissions": [ //permissions our extension requires to do things
         "storage",
         "alarms",
         "notifications"
     ],
-    "background": {  //links us to our script that runs in the background
-        "scripts": [  //scans file and listen for any pertinent events
+    "background": { //links us to our script that runs in the background
+        "scripts": [ //scans file and listen for any pertinent events
             "./script.js",
             "./alarm.js",
             "./style.css"
-            
         ],
         "persistent": true
     },
