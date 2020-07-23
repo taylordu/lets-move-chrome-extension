@@ -11,6 +11,12 @@ chrome.alarms.onAlarm.addListener(function () {
   });
 });
 
+chrome.notifications.onButtonClicked.addListener(function(activeTab)
+{
+    let newURL = "https://www.youtube.com/watch?v=vRQdJQ3Xhzk";
+    chrome.tabs.create({ url: newURL });
+}); //this function should fire when ok! is clicked. 
+
 // chrome.notifications.onButtonClicked.addListener(function () {
 //   chrome.storage.sync.get(['minutes'], function (item) {
 //     chrome.alarms.create({ delayInMinutes: item.minutes });

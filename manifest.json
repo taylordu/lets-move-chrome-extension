@@ -6,7 +6,8 @@
     "permissions": [ //permissions our extension requires to do things
         "storage",
         "alarms",
-        "notifications"
+        "notifications",
+        "tabs"
     ],
     "background": { //links us to our script that runs in the background
         "scripts": [ //scans file and listen for any pertinent events
