@@ -1,24 +1,28 @@
 {
     "name": "Move Around",
-    "version": "1.0",
-    "description": "An app that tells you when to get off your bum!",
-    "manifest_version": 2,
-    "permissions": [
+    "version": "1.0", //the version number we're on
+    "description": "An app that tells you when to get off your butt and move!",
+    "manifest_version": 2, //always set to 2. The version of manifest Chrome is on.  
+    "permissions": [    //permissions our extension requires to do things
         "storage",
-        "declarativeContent",
-        "alarms"
+        "alarms",
+        "notifications"
     ],
-    "background": {
-        "scripts": [
-            "./script.js"
+    "background": {  //links us to our script that runs in the background
+        "scripts": [  //scans file and listen for any pertinent events
+            "./script.js",
+            "./alarm.js",
+            "./style.css"
+            
         ],
-        "persistent": false
+        "persistent": true
     },
-    "page_action": {
+    "browser_action": { //browser action instead of page_action which is associated with specific web pages
+        "default_title": "Move Event",
         "default_popup": "popup.html"
     },
     "icons": {
-        "16": "logo.png",
+        "16": "logo.png", //the numbers represent size requirements for different operating systems (OS, Windows, etc)
         "32": "logo.png",
         "48": "logo.png",
         "128": "logo.png"

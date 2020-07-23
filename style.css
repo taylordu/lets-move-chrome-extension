@@ -1,0 +1,40 @@
+body {
+    background-color: white;
+    width: 500px;
+    height: 170px;
+    border: solid  #7953b3 2px;
+    border-radius: 5px;
+  }
+
+  #logo {
+    width: 100px;
+    margin: 0px;
+  }
+
+  .btn-wrapper {
+      text-align: right;
+      padding-left: 150px;
+  }
+  .button {
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px;
+    padding-bottom: 25px;
+    background-color: #7953b3;
+    border: solid white 1px;
+    font-family: sans-serif;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    height: 15px;
+    }
+        
+.button:hover {
+    background: white;
+    color: #7953b3;
+    border: solid  #7953b3 2px;
+    border-radius: 5px;
+    text-decoration: none; 
+    }

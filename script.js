@@ -1,37 +1,22 @@
+'use strict';
 
-  chrome.alarms.onAlarm.addListener(function() {
-    chrome.browserAction.setBadgeText({text: ''});
-    chrome.notifications.create({
-        type:     'basic',
-        iconUrl:  'stay_hydrated.png',
-        title:    'Time to Hydrate',
-        message:  'Everyday I\'m Guzzlin\'!',
-        buttons: [
-          {title: 'Keep it Flowing.'}
-        ],
-        priority: 0});
-  });
-  
-  chrome.notifications.onButtonClicked.addListener(function() {
-    chrome.storage.sync.get(['minutes'], function(item) {
-      chrome.browserAction.setBadgeText({text: 'ON'});
-      chrome.alarms.create({delayInMinutes: item.minutes});
-    });
-  });
+function setAlarm(event) { //this function will set times 
+  //console.log("inside alarm")
+  //console.log(event, "event")
+  let minutes = parseFloat(event.target.value);
+  chrome.alarms.create({ delayInMinutes: minutes, periodInMinutes: minutes });
+  chrome.storage.sync.set({ minutes: minutes }); //can take in two args, the second could be a callback
+  window.close(); //can only be used on windows opened by a window.open() method.
+}
 
-  chrome.declarativeContent.onPageChanged.removeRules(undefined, function() {
-    chrome.declarativeContent.onPageChanged.addRules([{
-      conditions: [new chrome.declarativeContent.PageStateMatcher({
-        pageUrl: {hostEquals: 'developer.chrome.com'},
-      })
-      ],
-          actions: [new chrome.declarativeContent.ShowPageAction()]
-    }]);
-  });
 
-  let changeColor = document.getElementById('changeColor');
+function clearAlarm() {
+  chrome.alarms.clearAll();
+  window.close();
+}
 
-  chrome.storage.sync.get('color', function(data) {
-    changeColor.style.backgroundColor = data.color;
-    changeColor.setAttribute('value', data.color);
-  });
+document.getElementById('15min').addEventListener('click', setAlarm); //Cannot read property 'addEventListener' of null 
+document.getElementById('30min').addEventListener('click', setAlarm); 
+document.getElementById('cancelAlarm').addEventListener('click', clearAlarm);
+
+//think the invocation of alarm is either not happening or nothing is being passed in somehow to eventlistener.
