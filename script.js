@@ -17,7 +17,7 @@ function clearAlarm() {
 
 let alarmSet = document.querySelector('.alarmSet');
 
-document.getElementById('15min').addEventListener('click', setAlarm); 
-document.getElementById('30min').addEventListener('click', setAlarm); 
+document.getElementById('15min').addEventListener('click', setAlarm);
+document.getElementById('30min').addEventListener('click', setAlarm);
 document.getElementById('60min').addEventListener('click', setAlarm);
 document.getElementById('cancelAlarm').addEventListener('click', clearAlarm);

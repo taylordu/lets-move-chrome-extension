@@ -13,6 +13,7 @@ chrome.alarms.onAlarm.addListener(function () {
 });
 
 chrome.notifications.onButtonClicked.addListener(function (activeTab) {
-  let newURL = 'https://www.healthline.com/health/deskercise';
+  let newURL =
+    'https://www.youtube.com/playlist?list=PLP7Ou7uUiYzAP3RBUrQ5EOIT9IwreCDQp';
   chrome.tabs.create({ url: newURL });
 }); //this function should fire when ok! is clicked.
